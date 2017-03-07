@@ -6,7 +6,7 @@ using namespace std;
 int main(void){
 	srand(time(NULL));
 
-	int aleatorio, giros, i, face1=0, face2=0, face3=0, face4=0, face5=0, face6=0;
+	int aleatorio, giros, i=0, face1=0, face2=0, face3=0, face4=0, face5=0, face6=0;
 
 	
 

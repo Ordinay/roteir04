@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -47,13 +48,16 @@ int main(void){
 					MaisVotado = jogadores[b].voto;
 
 					Jogador = b;
+
+
 				}
 
 			}
 
-//			cout << MaisVotado << "  Valor de b :" << b << "Numero do jogador :" << Jogador << endl;
+			//cout << MaisVotado << "  Valor de b :" << b << "Numero do jogador :" << Jogador << endl;
 
-			cout << "\nO Jogador mais votado foi o " << Jogador << "com " << MaisVotado << "Votos " << "Correspondente a " << (((float) jogadores[Jogador].voto / TotalVotos)*100) << "%" <<" dos votos" << endl; 
+			cout << "\nO Jogador mais votado foi o " << Jogador << "com " << MaisVotado << "Votos " << "Correspondente a "
+			<< setprecision(2) << (((float)jogadores[Jogador].voto / TotalVotos)*100) << "%" <<" dos votos" << endl; 
 
 			return 0;
 		}
@@ -63,7 +67,7 @@ int main(void){
             cout << "\nDigite um Numero Valido" << endl;
 		}
 
-		if( num>=1 & num <= 23){
+		if( num>=1 && num <= 23){
 
 			TotalVotos++;
 
